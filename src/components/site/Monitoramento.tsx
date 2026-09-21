@@ -1,7 +1,7 @@
 import { Gauge, Zap, Thermometer, Droplets, FlaskConical } from "lucide-react";
 import { SectionHeading } from "./Section";
 import { Reveal } from "./Reveal";
-import painelAsset from "@/assets/painel-monitoramento.jpg.asset.json";
+import painelAsset from "@/assets/painel-monitoramento.jpg";
 import { ProgressiveImage } from "./ProgressiveImage";
 
 const indicadores = [
@@ -55,7 +55,7 @@ export function Monitoramento() {
                 </span>
               </div>
               <ProgressiveImage
-                src={painelAsset.url}
+                src={painelAsset}
                 alt="Controladores de dosagem, sensores de pH e ORP instalados em granja atendida pela P4"
                 className="aspect-4/3 w-full rounded-2xl object-cover"
               />

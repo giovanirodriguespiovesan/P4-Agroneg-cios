@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { nav, whatsappUrl } from "@/lib/site";
-import logoAsset from "@/assets/logo-p4-colorido.png.asset.json";
+import logoAsset from "@/assets/logo-p4-colorido.png";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -25,7 +25,7 @@ export function Header() {
       <div className="container-p4 flex min-h-[72px] items-center justify-between gap-4 py-3">
         <a href="/#home" className="flex shrink-0 items-center" aria-label="P4 Agronegócios — Home">
           <img
-            src={logoAsset.url}
+            src={logoAsset}
             alt="Logo P4 Agronegócios"
             style={{ height: "44px", width: "auto" }}
             className="!h-[44px] w-auto shrink-0 object-contain sm:!h-[56px]"

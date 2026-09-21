@@ -1,6 +1,6 @@
 import { SectionHeading } from "./Section";
 import { Reveal } from "./Reveal";
-import belaVistaAsset from "@/assets/bela-vista-solucoes.png.asset.json";
+import belaVistaAsset from "@/assets/bela-vista-solucoes.png";
 import { ProgressiveImage } from "./ProgressiveImage";
 
 const partners = [
@@ -12,7 +12,7 @@ const partners = [
   },
   {
     name: "Bela Vista Soluções",
-    logo: belaVistaAsset.url,
+    logo: belaVistaAsset,
     role: "Tecnologia e soluções ambientais",
     description:
       "Parceira especializada em soluções ambientais que contribui com know-how técnico para o tratamento sustentável da água.",

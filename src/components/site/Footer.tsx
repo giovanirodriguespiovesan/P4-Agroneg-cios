@@ -1,5 +1,5 @@
 import { ArrowRight, MessageCircle, Phone, Mail, MapPin, Instagram } from "lucide-react";
-import logoAsset from "@/assets/logo-p4.png.asset.json";
+import logoAsset from "@/assets/logo-p4.png";
 import { site, whatsappUrl, nav } from "@/lib/site";
 import { Reveal } from "./Reveal";
 
@@ -51,7 +51,7 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-2.5">
             <img
-              src={logoAsset.url}
+              src={logoAsset}
               alt="Logo P4 Agronegócios"
               loading="lazy"
               className="h-10 w-10 rounded-xl object-cover"

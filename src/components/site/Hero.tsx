@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, MessageCircle, Check, PlayCircle } from "lucide-react";
-import heroAsset from "@/assets/DJI_0513.jpg.asset.json";
-import aerialAsset from "@/assets/hero.jpg.asset.json";
-import granjaAsset from "@/assets/granja.jpg.asset.json";
+import heroAsset from "@/assets/DJI_0513.jpg";
+import aerialAsset from "@/assets/hero.jpg";
+import granjaAsset from "@/assets/granja.jpg";
 import { whatsappUrl } from "@/lib/site";
 import { CountUp } from "./CountUp";
 
 const indicators = ["+10 anos de mercado", "Monitoramento em tempo real", "Consultoria especializada"];
 
 export function Hero() {
-  const slides = [heroAsset.url, aerialAsset.url, granjaAsset.url];
+  const slides = [heroAsset, aerialAsset, granjaAsset];
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const touchX = useRef<number | null>(null);

@@ -1,11 +1,11 @@
 import { SectionHeading } from "./Section";
 import { Reveal } from "./Reveal";
-import drone1Asset from "@/assets/granja-drone-1.png.asset.json";
-import drone2Asset from "@/assets/granja-drone-2.png.asset.json";
-import drone3Asset from "@/assets/granja-drone-3.png.asset.json";
-import drone4Asset from "@/assets/granja-drone-4.png.asset.json";
-import drone5Asset from "@/assets/granja-drone-5.png.asset.json";
-import drone6Asset from "@/assets/granja-drone-6.png.asset.json";
+import drone1Asset from "@/assets/granja-drone-1.png";
+import drone2Asset from "@/assets/granja-drone-2.png";
+import drone3Asset from "@/assets/granja-drone-3.png";
+import drone4Asset from "@/assets/granja-drone-4.png";
+import drone5Asset from "@/assets/granja-drone-5.png";
+import drone6Asset from "@/assets/granja-drone-6.png";
 import { ProgressiveImage } from "./ProgressiveImage";
 
 function GalleryFigure({
@@ -43,7 +43,7 @@ export function Galeria() {
           <Reveal className="lg:col-span-2">
             <figure className="overflow-hidden rounded-2xl shadow-lg">
               <ProgressiveImage
-                src={drone1Asset.url}
+                src={drone1Asset}
                 alt="Conjunto de vistas aéreas de granjas atendidas pela P4 Agronegócios"
                 className="aspect-16/9 w-full object-cover"
               />
@@ -55,7 +55,7 @@ export function Galeria() {
 
           <Reveal delay={80} className="h-full">
             <GalleryFigure
-              src={drone2Asset.url}
+              src={drone2Asset}
               alt="Vista aérea de granja com galpões e painéis solares"
               caption="Estrutura completa de uma granja"
               className="aspect-4/3 lg:aspect-auto"
@@ -64,21 +64,21 @@ export function Galeria() {
 
           <Reveal delay={140} className="h-full">
             <GalleryFigure
-              src={drone3Asset.url}
+              src={drone3Asset}
               alt="Vista aérea de granja cercada por área verde e mata"
               caption="Granja de Mondaí"
             />
           </Reveal>
           <Reveal delay={200} className="h-full">
             <GalleryFigure
-              src={drone4Asset.url}
+              src={drone4Asset}
               alt="Vista aérea de granja próxima a áreas de cultivo e reservatórios"
               caption="Granja de Aves em Caxambu do Sul"
             />
           </Reveal>
           <Reveal delay={260} className="h-full">
             <GalleryFigure
-              src={drone5Asset.url}
+              src={drone5Asset}
               alt="Vista aérea ampla de granja em área agrícola"
               caption="Granja em Xaxim"
             />
@@ -86,7 +86,7 @@ export function Galeria() {
 
           <Reveal delay={320} className="h-full">
             <GalleryFigure
-              src={drone6Asset.url}
+              src={drone6Asset}
               alt="Conjunto de vistas aéreas de reservatórios e estações de tratamento em granjas"
               caption="Estações e reservatórios instalados"
             />

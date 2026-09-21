@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 import { SectionHeading, FeatureCard } from "./Section";
 import { Reveal } from "./Reveal";
-import granjaAsset from "@/assets/granja.jpg.asset.json";
+import granjaAsset from "@/assets/granja.jpg";
 import { ProgressiveImage } from "./ProgressiveImage";
 
 const riscos = [
@@ -179,7 +179,7 @@ export function Solucao() {
             />
             <Reveal delay={120}>
               <ProgressiveImage
-                src={granjaAsset.url}
+                src={granjaAsset}
                 alt="Vista aérea de granjas atendidas pela P4 Agronegócios"
                 className="mt-8 aspect-4/3 w-full rounded-2xl object-cover shadow-lg"
               />
